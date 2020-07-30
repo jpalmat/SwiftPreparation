@@ -9,3 +9,8 @@ print(pi1)
 //random
 let ram = Int.random(in: 1...10)
 print(ram)
+for i in stride(from: 10, through: 2, by: -1){
+    print(i)
+}
+var ar = [1, 2, 3]
+ar.forEach{print($0)}
