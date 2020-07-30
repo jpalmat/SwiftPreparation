@@ -14,3 +14,12 @@ for i in stride(from: 10, through: 2, by: -1){
 }
 var ar = [1, 2, 3]
 ar.forEach{print($0)}
+
+var arr = [1, 2, 3]
+
+func addItem( localArr: inout [Int]) {
+    localArr.append(4)
+}
+
+addItem(localArr: &arr)
+print(arr) // it will print [1, 2, 3, 4]
